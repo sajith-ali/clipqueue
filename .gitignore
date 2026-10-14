@@ -1,0 +1,38 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+*.local
+
+# Rust / Tauri build output (several GB)
+src-tauri/target/
+src-tauri/gen/
+
+# Bundled engines (downloaded by get-engines.ps1; far too large for Git)
+src-tauri/binaries/*
+!src-tauri/binaries/.gitkeep
+
+# Packaged output
+ClipQueue-portable/
+ClipQueue-portable.zip
+*.exe
+*.msi
+
+# Cookies and secrets. Never commit these.
+cookies*.txt
+*.cookies
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editors and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
